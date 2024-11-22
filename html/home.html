@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/icon" href="/media/favicon.ico">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="notes.northernsi.de" />
+    <meta content="#121212" name="theme-color">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://notes.northernsi.de/" />
+    <meta property="og:title" content="Welcome to Northernside's Notes" />
+    <meta property="og:image" content="https://notes.northernsi.de/media/meta.webp" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://notes.northernsi.de/" />
+    <meta property="twitter:title" content="Welcome to Northernside's Notes" />
+    <meta property="twitter:image" content="https://notes.northernsi.de/media/meta.webp" />
+
+    <title>Northernside's Notes</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            padding-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        a {
+            color: #bb86fc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        label {
+            background-color: white;
+            color: black;
+            padding: 5px;
+            font-size: 12px;
+            border-radius: 4px;
+            font-weight: 800;
+            margin: 10px;
+            position: absolute;
+        }
+
+        .notes {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .note {
+            background-color: rgb(41, 41, 41);
+            border-radius: 10px;
+            display: flex;
+            cursor: pointer;
+        }
+
+        .note-information {
+            padding: 20px;
+        }
+
+        img {
+            image-rendering: pixelated;
+        }
+
+        .title-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .title-container span {
+            margin-left: auto;
+            color: gray;
+            font-size: 12px;
+        }
+
+        .title-container h4 {
+            margin: 0;
+        }
+
+        .note p {
+            margin: 0;
+            font-size: 15px;
+            color: rgb(197, 197, 197);
+        }
+
+        .preview-image {
+            background-size: cover !important;
+            width: 40%;
+            border-radius: 10px 0 0 10px;
+            overflow: hidden;
+            background-position: center !important;
+            background-size: 100% auto !important;
+            transition: all 0.3s ease-in-out;
+
+        }
+
+        .note:hover .preview-image {
+            background-size: 110% auto !important;
+        }
+
+        .note-information {
+            width: 70%;
+        }
+
+        .footer {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .footer p {
+            line-height: 0.5;
+        }
+
+        @media screen and (max-width: 860px) {
+            .note {
+                flex-direction: column;
+            }
+
+            .preview-image {
+                width: 100%;
+                height: 200px;
+                border-radius: 10px 10px 0 0;
+            }
+
+            .note-information {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .extended-date {
+                display: none;
+            }
+            
+        }
+    </style>
+    <script>
+        window.onload = () => {
+            const notes = document.querySelectorAll('.note');
+            notes.forEach(note => {
+                note.getElementsByClassName("preview-image")[0].innerHTML += checkForNewContent(note.getAttribute('published')) ? '<label>NEW</label>' : '';
+            });
+            document.cookie = `lastVisit=${new Date().getTime()}; max-age=31536000; path=/`;
+        }
+
+        function checkForNewContent(timestamp) {
+            if (!getCookie('lastVisit')) return false;
+            const lastVisit = getCookie('lastVisit');
+            return lastVisit < timestamp;
+        }
+
+        function getCookie(name) {
+            const regex = new RegExp(`(^| )${name}=([^;]+)`)
+            const match = document.cookie.match(regex)
+            if (match) {
+                return match[2]
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <p><a href="/">Home</a></p>
+        <h1>Northernside</h1>
+        <div class="notes">
+            {{notes}}
+        </div>
+
+        <div class="footer">
+            <p>Open source - Available on <a href="https://github.com/Northernside/notes">GitHub</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

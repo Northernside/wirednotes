@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/icon" href="/media/favicon.ico">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="notes.northernsi.de" />
+    <meta content="#121212" name="theme-color">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://notes.northernsi.de/" />
+    <meta property="og:title" content="{{meta_title}}" />
+    <meta property="og:image" content="{{meta_image}}" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://notes.northernsi.de/" />
+    <meta property="twitter:title" content="{{meta_title}}" />
+    <meta property="twitter:image" content="{{meta_image}}" />
+
+    <title>{{title}} - notes.northernsi.de</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            padding-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+
+        a {
+            color: #bb86fc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        blockquote {
+            background-color: #333;
+            border-left: 5px solid #bb86fc;
+            padding: 10px;
+            margin: 0;
+        }
+
+        code {
+            background-color: #333;
+            color: #f8f8f2;
+            padding: 2px 4px;
+            border-radius: 4px;
+            width: fit-content;
+            word-wrap: break-word;
+        }
+
+        pre {
+            background-color: #333;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+
+        .footer {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .footer p {
+            line-height: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"><p><a href="/">Home</a></p>{{content}}</div>
+    <div class="footer">
+        <p>Open source - Available on <a href="https://github.com/Northernside/notes">GitHub</a></p>
+    </div>
+</body>
+
+</html>
