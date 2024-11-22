@@ -8,13 +8,13 @@ export function mdToHtml(note: Note): string {
     .replace(
       /^# (.+)$/gm,
       `<h1 style="margin-bottom: -25px;">$1</h1>
-          <span style="color: gray;">published ${new Date(
-            note.published
-          ).toLocaleDateString()}</span>
-          <img src="${
-            note.meta_image
-          }" alt="Meta image" style="width: 100%; height: auto; margin-top: 20px; border-radius: 10px;">
-      `
+            <span style="color: gray;">published ${new Date(
+              note.published
+            ).toLocaleDateString()}</span>
+            <img src="${
+              note.meta_image
+            }" alt="Meta image" style="width: 100%; height: auto; margin-top: 20px; border-radius: 10px;">
+        `
     )
     .replace(/^## (.+)$/gm, "<h2>$1</h2>")
     .replace(/^### (.+)$/gm, "<h3>$1</h3>")
@@ -57,12 +57,14 @@ export function mdToHtml(note: Note): string {
       }
     )
     .replace(
-      /^(\s*)[0-9]+\.(.+)$/gm,
-      (_: string, spaces: string, text: string) => {
+      /^(\s*)(\d+)\. (.+)$/gm,
+      (_: string, spaces: string, number: string, text: string) => {
         const depth = spaces.length / 2;
         return `${"<ol>".repeat(
           depth + 1
-        )}<li>${text.trim()}</li>${"</ol>".repeat(depth + 1)}`;
+        )}<li value="${number}">${text.trim()}</li>${"</ol>".repeat(
+          depth + 1
+        )}`;
       }
     );
 
