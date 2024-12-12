@@ -87,9 +87,7 @@ Der Betriebsrat ist ein Gremium, das die Interessen der Arbeitnehmer vertritt.
 
 ---
 
-# Detaillierter Lernzettel: Streikarten
-
-## 1. Warnstreik
+## 7. Warnstreik
 ### Definition
 Ein Warnstreik ist eine kurzfristige, geplante Arbeitsniederlegung, die meist nur wenige Stunden dauert.  
 Ziel ist es, den Druck auf den Arbeitgeber während laufender Tarifverhandlungen zu erhöhen.  
@@ -101,8 +99,8 @@ Ziel ist es, den Druck auf den Arbeitgeber während laufender Tarifverhandlungen
 - **Dauer:** Üblicherweise wenige Stunden.
 - **Beispiele:** Arbeitsniederlegung in bestimmten Schichten oder Abteilungen für einige Stunden, um den Arbeitgeber zur Bewegung in Verhandlungen zu bewegen.
 
-## 2. Vollstreik (Flächenstreik)
-### Definition
+### Vollstreik (Flächenstreik)
+#### Definition
 Ein Vollstreik ist eine komplette und unbefristete Arbeitsniederlegung in einem Betrieb oder einer Branche.  
 Ziel ist es, den Arbeitgeber zu einer Einigung in den Tarifverhandlungen zu zwingen.  
 - **Organisiert von:** Gewerkschaften, nach gescheiterter Tarifverhandlung.
@@ -113,8 +111,8 @@ Ziel ist es, den Arbeitgeber zu einer Einigung in den Tarifverhandlungen zu zwin
 - **Dauer:** Kann über Tage, Wochen oder sogar Monate gehen.
 - **Folgen:** Hoher wirtschaftlicher Druck auf den Arbeitgeber; Arbeitnehmer erhalten in dieser Zeit Streikgeld von der Gewerkschaft.
 
-## 3. Bummelstreik (Dienst nach Vorschrift)
-### Definition
+### Bummelstreik (Dienst nach Vorschrift)
+#### Definition
 Beim Bummelstreik verlangsamen Arbeitnehmer bewusst ihre Arbeitsgeschwindigkeit oder erledigen nur das, was unbedingt notwendig ist.  
 Ziel ist es, die Produktivität zu senken und dadurch wirtschaftlichen Druck auf den Arbeitgeber auszuüben.  
 - **Organisiert von:** Oft ohne offizielle Gewerkschaftsorganisation.
@@ -123,8 +121,8 @@ Ziel ist es, die Produktivität zu senken und dadurch wirtschaftlichen Druck auf
 - **Beispiele:** Langsames Bearbeiten von Aufgaben, übergenaue Einhaltung von Vorschriften und Regeln (sog. „Dienst nach Vorschrift“).
 - **Risiken:** Arbeitnehmer könnten abgemahnt oder entlassen werden, wenn der Bummelstreik nicht offiziell abgesichert ist.
 
-## 4. Wilder Streik
-### Definition
+### Wilder Streik
+#### Definition
 Ein wilder Streik ist eine nicht von Gewerkschaften organisierte Arbeitsniederlegung, die spontan durch Arbeitnehmer initiiert wird.  
 Ziel ist meist eine schnelle Reaktion auf akute Missstände oder Konflikte.  
 - **Organisiert von:** Arbeitnehmer (keine Gewerkschaftsbeteiligung).
@@ -133,8 +131,8 @@ Ziel ist meist eine schnelle Reaktion auf akute Missstände oder Konflikte.
 - **Folgen:** Teilnehmer können abgemahnt oder sogar gekündigt werden.
 - **Beispiele:** Spontane Arbeitsniederlegungen nach einer plötzlichen Änderung der Arbeitsbedingungen.
 
-## 5. Schwerpunktstreik
-### Definition
+### Schwerpunktstreik
+#### Definition
 Ein Schwerpunktstreik konzentriert sich auf strategisch wichtige Betriebe oder Abteilungen innerhalb eines Unternehmens oder einer Branche.  
 Ziel ist es, den Arbeitgeber gezielt unter Druck zu setzen, ohne alle Beschäftigten in den Streik einzubeziehen.  
 - **Organisiert von:** Gewerkschaften.
@@ -142,8 +140,8 @@ Ziel ist es, den Arbeitgeber gezielt unter Druck zu setzen, ohne alle Beschäfti
 - **Rechtslage:** Zulässig, wenn die Voraussetzungen für einen Streik erfüllt sind.
 - **Beispiele:** Streik in einer Schlüsselabteilung (z. B. Logistik, IT, Produktion), um den gesamten Betriebsablauf zu stören.
 
-## 6. Generalstreik
-### Definition
+### Generalstreik
+#### Definition
 Ein Generalstreik ist eine flächendeckende Arbeitsniederlegung, die sich nicht nur auf eine Branche oder einen Betrieb beschränkt, sondern die gesamte Wirtschaft betrifft.  
 Ziel ist meist die Durchsetzung politischer Forderungen oder umfassender gesellschaftlicher Veränderungen.  
 - **Organisiert von:** Gewerkschaften oder politischen Bewegungen.
